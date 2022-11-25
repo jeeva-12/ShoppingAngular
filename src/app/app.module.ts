@@ -8,6 +8,7 @@ import { SaladComponent } from './salad/salad.component';
 import { IndianComponent } from './indian/indian.component';
 import { ItalianComponent } from './italian/italian.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute:Routes=[
   {
@@ -34,7 +35,8 @@ const myRoute:Routes=[
     LoginComponent,
     SaladComponent,
     IndianComponent,
-    ItalianComponent
+    ItalianComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
