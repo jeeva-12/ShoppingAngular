@@ -7,6 +7,26 @@ import { LoginComponent } from './login/login.component';
 import { SaladComponent } from './salad/salad.component';
 import { IndianComponent } from './indian/indian.component';
 import { ItalianComponent } from './italian/italian.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const myRoute:Routes=[
+  {
+    path:"",
+    component:LoginComponent
+  },
+  {
+    path:"indian",
+    component:IndianComponent
+  },
+  {
+    path:"italian",
+    component:ItalianComponent
+  },
+  {
+    path:"salad",
+    component:SaladComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -18,7 +38,8 @@ import { ItalianComponent } from './italian/italian.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
